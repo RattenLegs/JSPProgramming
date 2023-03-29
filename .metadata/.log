@@ -1,4 +1,4 @@
-!SESSION 2023-03-28 20:58:58.311 -----------------------------------------------
+!SESSION 2023-03-29 20:56:51.157 -----------------------------------------------
 eclipse.buildId=4.16.0.I20200604-0540
 java.version=1.8.0_351
 java.vendor=Oracle Corporation
@@ -6,15 +6,15 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
 Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
-!ENTRY org.eclipse.jface 2 0 2023-03-28 21:08:16.027
+!ENTRY org.eclipse.jface 2 0 2023-03-29 20:56:59.216
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
-!SUBENTRY 1 org.eclipse.jface 2 0 2023-03-28 21:08:16.027
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-03-29 20:56:59.216
 !MESSAGE A conflict occurred for CTRL+SHIFT+T:
 Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
 		Open a type in a Java editor,
 		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@445b4594,
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@64f2b1b4,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
@@ -22,22 +22,19 @@ Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
 		,
 		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1f602930,
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@11ad327f,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
 
-!ENTRY org.eclipse.egit.ui 2 0 2023-03-28 21:08:22.871
+!ENTRY org.eclipse.egit.ui 2 0 2023-03-29 20:57:05.123
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\RattanLegs'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
-!ENTRY org.eclipse.wst.server.discovery 1 0 2023-03-29 01:02:16.454
-!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2023-03-29 01:02:23.012
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2023-03-29 20:58:06.166
 !MESSAGE Connection to http://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/updates/libertyAdapter/2019-06/site.xml failed on Connect to public.dhe.ibm.com:80 [public.dhe.ibm.com/170.225.126.18] failed: Connection refused: connect. Retry attempt 0 started
 !STACK 0
 org.apache.http.conn.HttpHostConnectException: Connect to public.dhe.ibm.com:80 [public.dhe.ibm.com/170.225.126.18] failed: Connection refused: connect
@@ -68,7 +65,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
 	... 13 more
 
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2023-03-29 01:02:28.997
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2023-03-29 20:58:12.126
 !MESSAGE Connection to http://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/updates/libertyAdapter/2019-06/p2.index failed on Connect to public.dhe.ibm.com:80 [public.dhe.ibm.com/170.225.126.18] failed: Connection refused: connect. Retry attempt 0 started
 !STACK 0
 org.apache.http.conn.HttpHostConnectException: Connect to public.dhe.ibm.com:80 [public.dhe.ibm.com/170.225.126.18] failed: Connection refused: connect
@@ -99,7 +96,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
 	... 13 more
 
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2023-03-29 01:02:31.250
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2023-03-29 20:58:12.959
 !MESSAGE Connection to http://jope.ow2.org/update/jope/site.xml failed on jope.ow2.org. Retry attempt 0 started
 !STACK 0
 java.net.UnknownHostException: jope.ow2.org
@@ -125,7 +122,7 @@ java.net.UnknownHostException: jope.ow2.org
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2023-03-29 01:02:31.457
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2023-03-29 20:58:13.175
 !MESSAGE Connection to http://jope.ow2.org/update/jope/p2.index failed on jope.ow2.org. Retry attempt 0 started
 !STACK 0
 java.net.UnknownHostException: jope.ow2.org
@@ -148,17 +145,26 @@ java.net.UnknownHostException: jope.ow2.org
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.wst.html.ui 1 1 2023-03-29 01:21:21.830
+!ENTRY org.eclipse.wst.html.ui 1 1 2023-03-29 21:25:41.499
 !MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
 
-!ENTRY org.eclipse.wst.html.ui 1 1 2023-03-29 01:21:21.836
+!ENTRY org.eclipse.wst.html.ui 1 1 2023-03-29 21:25:41.505
 !MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
 
-!ENTRY org.eclipse.wst.html.ui 1 1 2023-03-29 01:21:26.065
+!ENTRY org.eclipse.wst.html.ui 1 1 2023-03-29 21:25:49.041
 !MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
 
-!ENTRY org.eclipse.wst.html.ui 1 1 2023-03-29 01:21:26.066
+!ENTRY org.eclipse.wst.html.ui 1 1 2023-03-29 21:25:49.042
 !MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
 
-!ENTRY org.eclipse.wst.html.ui 1 1 2023-03-29 01:21:26.067
+!ENTRY org.eclipse.wst.html.ui 1 1 2023-03-29 21:25:49.042
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2023-03-29 21:27:49.213
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2023-03-29 21:27:49.214
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2023-03-29 21:27:49.214
 !MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
