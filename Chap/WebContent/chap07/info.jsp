@@ -12,7 +12,7 @@
 </table>
 
 <jsp:include page="infoSub.jsp" flush="false">
-	<jsp:param name="type" value="A" />
+	<jsp:param name="type" value="B" />
 </jsp:include>
 
 </body>
