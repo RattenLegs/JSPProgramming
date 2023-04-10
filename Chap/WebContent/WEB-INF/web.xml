@@ -38,4 +38,14 @@
 		<exception-type>java.lang.NullPointerException</exception-type>
 		<location>/error/errorNullPointer.jsp</location>
 	</error-page>
+	
+	<jsp-config>
+		<jsp-property-group> <!-- jsp의 프로퍼티 포함 -->
+			<url-pattern>/chap07/view/*</url-pattern> <!-- 프로퍼티에 적용할 jsp파일의 URL패턴 저장 -->
+			<include-prelude>/chap07/common/variable.jspf</include-prelude><!-- url-pattern 태그에 지정한 패턴에 해당하는 jsp 파일 앞에 삽입할 파일 지정 -->
+			<include-coda>/chap07/common/footer.jspf</include-coda> <!-- 뒤에 삽입할 파일 지정 -->
+		</jsp-property-group>
+		
+		<!-- jsp-property-group 두개 이상 사용 가능 -->
+	</jsp-config>
 </web-app>
