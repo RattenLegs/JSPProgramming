@@ -3,7 +3,7 @@ package chap08.member;
 import java.util.Date;
 
 public class MemberInfo {
-	
+
 	private String id;
 	private String password;
 	private String name;
@@ -13,31 +13,32 @@ public class MemberInfo {
 	public String getId() {
 		return id;
 	}
-	public void setId(String val) {
-		this.id = val;
+	public void setId(String id) {
+		this.id = id;
 	}
 	public String getPassword() {
 		return password;
 	}
-	public void setPassword(String val) {
-		this.password = val;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	public String getName() {
 		return name;
 	}
-	public void setName(String val) {
-		this.name = val;
+	public void setName(String name) {
+		this.name = name;
 	}
 	public Date getRegisterDate() {
 		return registerDate;
 	}
-	public void setRegisterDate(Date val) {
-		this.registerDate = val;
+	public void setRegisterDate(Date registerDate) {
+		this.registerDate = registerDate;
 	}
 	public String getEmail() {
 		return email;
 	}
-	public void setEmail(String val) {
-		this.email = val;
+	public void setEmail(String email) {
+		this.email = email;
 	}
+	
 }
