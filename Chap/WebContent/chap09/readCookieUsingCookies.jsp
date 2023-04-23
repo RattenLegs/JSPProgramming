@@ -1,5 +1,5 @@
 <%@ page contentType = "text/html; charset=utf-8" %>
-<%@ page import = "util.Cookies" %>
+<%@ page import = "chap09.util.Cookies" %>
 <%
 	Cookies cookies = new Cookies(request);
 %>
