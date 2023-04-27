@@ -16,5 +16,6 @@
 <head><title>쿠키 삭제</title></head>
 <body>
 name 쿠키를 삭제합니다.
+<!--  -->
 </body>
 </html>
