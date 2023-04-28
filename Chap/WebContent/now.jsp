@@ -10,6 +10,5 @@
 </head>
 <body>
 	현재 시간은 <%= new Clock().now() %> 입니다.
-<!-- -->
 </body>
 </html>
