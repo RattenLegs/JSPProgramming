@@ -1,4 +1,4 @@
-<%-- <%@ page contentType = "text/html; charset=utf-8" %>
+<%@ page contentType = "text/html; charset=utf-8" %>
 <%@ page import="chap11.Member, java.util.*" %>
 <html>
 <head><title>EL min, max</title></head>
@@ -16,4 +16,3 @@ ${ maxAgeMemOpt = members.stream().max((m1, m2) -> m1.age.compareTo(m2.age)) ; '
 ${ maxAgeMemOpt.get().name } (${maxAgeMemOpt.get().age}세)
 </body>
 </html>
- --%>
