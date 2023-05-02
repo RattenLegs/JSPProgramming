@@ -9,6 +9,13 @@
 <body>
 
 <%= cookie.getName() %> 쿠키의 값 = "<%= cookie.getValue() %>"
+<% cookie.setMaxAge(60); %>
+<% cookie.setValue("goNow"); %>
+<p>
+쿠키의 값2 = <%= cookie.getValue() %>
+<p>
+쿠키의 유효시간: <%= cookie.getMaxAge() %>
+
 
 </body>
 </html>
