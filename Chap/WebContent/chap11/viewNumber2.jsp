@@ -1,5 +1,5 @@
 <%@ page contentType = "text/html; charset=utf-8" %>
-<%@ page import="util.FormatUtil" %>
+<%@ page import="chap11.util.FormatUtil" %>
 <%
 	request.setAttribute("price", 12345L);
 %>
