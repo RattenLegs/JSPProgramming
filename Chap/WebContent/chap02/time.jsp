@@ -8,6 +8,6 @@
 </head>
 <body>
 지금: <%= new java.util.Date() %>
-으아아아아
+으아아아아 가자!
 </body>
 </html>
