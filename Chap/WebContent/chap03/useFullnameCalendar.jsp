@@ -11,7 +11,7 @@
 <%
 	java.util.Calendar cal = java.util.Calendar.getInstance(); 
 %>
-
+<!-- 이왕이면 import ㄱㄱ -->
 오늘은
 <%= cal.get(Calendar.YEAR) %> 년
 <%= cal.get(Calendar.MONTH) %> 월
