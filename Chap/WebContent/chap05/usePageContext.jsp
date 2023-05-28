@@ -9,7 +9,7 @@
 <body>
 
 <%
-	HttpServletRequest httpRequest = (HttpServletRequest)pageContext.getRequest();
+	HttpServletRequest httpRequest = (HttpServletRequest)pageContext.getRequest(); //형 변환
 %>
 request 기본 객체와 pageContext.getRequest()의 동일여부:
 
