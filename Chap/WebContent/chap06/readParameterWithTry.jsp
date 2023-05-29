@@ -13,6 +13,6 @@ name 파라미터 값:
 <%= request.getParameter("name").toUpperCase() %>
 <%} catch(Exception ex) { %>
 name 파라미터가 올바르지 않습니다.
-<%} %>
+<%} %><!-- 일단 여기+@ -->
 </body>
 </html>

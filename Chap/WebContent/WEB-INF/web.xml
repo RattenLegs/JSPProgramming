@@ -17,8 +17,8 @@
 
 	<context-param><!-- chap05 초기화 파라미터 추가 -->
 		<description>로깅 여부</description>
-		<param-name>logEnabled</param-name>
-		<param-value>true</param-value>
+		<param-name>logEnabled</param-name><!-- 파라미터 이름 -->
+		<param-value>true</param-value><!-- 값 -->
 	</context-param>
 	<context-param>
 		<description>디버깅 레벨</description>
