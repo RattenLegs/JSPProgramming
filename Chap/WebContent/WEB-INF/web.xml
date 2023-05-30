@@ -28,18 +28,18 @@
 
 	<error-page>
 		<error-code>404</error-code>
-		<location>/error/error404.jsp</location>
+		<location>/chap06/error/error404.jsp</location>
 	</error-page>
 
 	<error-page>
 		<error-code>500</error-code>
-		<location>/error/error500.jsp</location>
+		<location>/chap06/error/error500.jsp</location>
 	</error-page>
 
 	<error-page>
 		<exception-type>java.lang.NullPointerException</exception-type>
-		<location>/error/errorNullPointer.jsp</location>
-	</error-page>
+		<location>/chap06/error/errorNullPointer.jsp</location>
+	</error-page> 
 
 	<jsp-config>
 		<jsp-property-group> <!-- jsp의 프로퍼티 포함 -->
