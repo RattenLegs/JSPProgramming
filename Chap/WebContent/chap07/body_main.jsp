@@ -17,6 +17,7 @@ include 전 name 파라미터 값: <%= request.getParameter("name") %>
 <hr/>
 
 include 후 name 파라미터 값: <%= request.getParameter("name") %>
-<!--  -->
+<!-- http://localhost:8383/chap07/body_main.jsp?name=cbk&name=asd -->
+
 </body>
 </html>
