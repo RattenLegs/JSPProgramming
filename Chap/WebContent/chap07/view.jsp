@@ -12,4 +12,4 @@
 	}	
 %>
 
-<jsp:forward page="<%= viewPageURI %>"/>"
+<jsp:forward page="<%= viewPageURI %>"/>" <!-- 집어넣은 정보의 page 이동 -->
