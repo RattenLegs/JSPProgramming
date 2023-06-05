@@ -5,4 +5,4 @@
 	member.setName("최범균");
 %>
 <jsp:forward page="/chap08/useObject.jsp" />
-<!-- forward: 주소는 안바뀌고 메세지는 바뀜 -->
+<!-- forward: 주소는 안바뀌고 메세지는 바뀜 !! -->
