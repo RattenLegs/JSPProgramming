@@ -9,7 +9,6 @@ public class MemberInfo {
 	private String name;
 	private Date registerDate;
 	private String email;
-	
 	public String getId() {
 		return id;
 	}
@@ -40,4 +39,6 @@ public class MemberInfo {
 	public void setEmail(String val) {
 		this.email = val;
 	}
+	
+
 }
