@@ -25,6 +25,11 @@
     <td><jsp:getProperty name="memberInfo" property="email" /></td>
 </tr>
 </table>
+<!-- 
 
+	setProperty를 쓰지 않았다면
+	memberInfo.setId(request.getParameter("id"));
+	이런 식으로 해야했을 것
+ -->
 </body>
 </html>
