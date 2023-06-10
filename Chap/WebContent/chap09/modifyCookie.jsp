@@ -1,11 +1,19 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
 <%@ page import = "java.net.URLEncoder" %>
 <%
-
+	Cookie[] cookies = request.getCookies();
+	if(cookies != null && cookies.length > 0){
+		for(int i = 0 ; i < cookies.length ; i++){
+			if(cookies[i].getName().equals("hey")){
+				Cookie cookie = new Cookie("hey", URLEncoder.encode("JSP프로그래밍", "utf-8"));
+				response.addCookie(cookie);
+			}
+		}
+	}
 %>
 <html>
 <head><title>값 변경</title></head>
 <body>
-
+hey 쿠키의 값을 변경합니다.
 </body>
 </html>
