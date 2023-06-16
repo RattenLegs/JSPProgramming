@@ -17,6 +17,6 @@
 	<input type="checkbox" name="pet" value="pig"> 도야지
 <input type="submit" value="전송">
 </form>
-
+<!-- 이론 정리 중-->
 </body>
 </html>
