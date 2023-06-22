@@ -8,7 +8,6 @@
 </head>
 <body>
 지금: <%= new java.util.Date() %>
-으아아아아 가자!
-내일 ~챕10까지 쭉 정리하는걸로 시작
+
 </body>
 </html>
