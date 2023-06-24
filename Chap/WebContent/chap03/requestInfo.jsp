@@ -16,5 +16,7 @@
 요청URI = <%=request.getRequestURI() %> <br><!-- 요청한 URL에서 경로 구함 -->
 컨텍스트 경로 = <%=request.getContextPath() %> <br><!-- 웹 어플리케이션의 컨텍스트 경로 구함 -->
 서버이름 = <%=request.getServerName() %> <br><!-- 서버 이름 구함 -->
+서버포트 = <%=request.getServerPort() %> <br><!-- 서버가 실행중인 포트 번호 -->
+<!-- 그렇다면 이걸 왜 옮겨야하는지 -->
 </body>
 </html>
