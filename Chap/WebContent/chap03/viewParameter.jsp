@@ -14,7 +14,7 @@
 <body>
 
 <b>request.getParameter() 메서드 사용</b><br>
-name 파라미터 = <%= request.getParameter("name") %>
+name 파라미터 = <%= request.getParameter("name") %> <br>
 address 파라미터 = <%= request.getParameter("address") %>
 <p>
 
