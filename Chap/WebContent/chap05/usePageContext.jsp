@@ -21,5 +21,8 @@ pageContext.getOut() 메서드를 사용한 데이터 출력:
 
 <% pageContext.getOut().println("안녕하세요"); %>
 
+<!-- 
+	나머지 객체는 어떻게 사용하는지 사용례 만들어보기
+-->
 </body>
 </html>
