@@ -12,20 +12,21 @@
 		예를 들어, if - else 블록과 스크립트를 구분하기 위한 태그 때문에 코드가 복잡한 경우 out 기본객체를 사용하면 복잡함을 제거할 수 있다.
 	-->
 
-<!-- 코드 복잡 -->
 	<%
-		int grade = 0;
-	int gradeStringA = 0;
-	int gradeStringB = 0;
+		int grade = 15;
+	String gradeStringA = "합격";
+	
+	String gradeStringB = "불합격";
 	%>
 
+<!-- 코드 복잡 -->
 	<%
 		if (grade > 10) {
 	%>
 
 	<%=gradeStringA%>
 	<%
-		} else if (grade > 5) {
+		} else {
 	%>
 	<%=gradeStringB%>
 	<%
@@ -37,7 +38,7 @@
 	<%
 	if(grade > 10){
 		out.println(gradeStringA);
-	} else if(grade > 5){
+	} else {
 		out.println(gradeStringB);
 	}
 	
