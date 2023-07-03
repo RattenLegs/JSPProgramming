@@ -12,15 +12,18 @@
 		<th>기본 객체</th>
 		<th>실제 타입</th>
 		<th>설명</th>
+		<th>기타</th>
 		<tr>
 			<td>request</td>
 			<td>javax.servlet.http.HttpServletRequest</td>
 			<td>클라이언트의 요청 정보를 저장한다.</td>
+			<td>3장(p76)</td>
 		</tr>
 		<tr>
 			<td>response</td>
 			<td>javax.servlet.http.HttpServletResponse</td>
 			<td>응답 정보를 저장한다.</td>
+			<td>3장(p90)</td>
 		</tr>
 		<tr>
 			<td>pageContext</td>
