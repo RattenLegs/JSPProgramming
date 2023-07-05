@@ -42,7 +42,7 @@
 		</tr>
 		<tr>
 			<td>out</td>
-			<td>javax.servlet.jsp.jspWriter</td><!-- jsp페이지가 생성하는 내용이 달려서 writer에 있나? -->
+			<td>javax.servlet.jsp.jspWriter</td><!-- jsp페이지가 생성하는 내용이 있기 때문에 writer에 있나? -->
 			<td>JSP 페이지가 생성하는 결과를 출력할 때 사용하는 출력 스트림이다.</td>
 		</tr>
 		<tr>
