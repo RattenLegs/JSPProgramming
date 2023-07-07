@@ -13,6 +13,7 @@
 <title>선언부를 사용한 두 정수의 곱</title>
 </head>
 <body>
+선언부(declaration): 스크립트릿이나 표현식에서 사용할 수 있는 메서드를 작성할 때 <br>
 10 * 25 = <%=multiply(10, 25) %>
 </body>
 </html>
