@@ -60,7 +60,8 @@
 			String[] petParam = (String[]) parameterMap.get("pet");
 		if (petParam != null) {
 			for(int i = 0; i < petParam.length; i++){
-				out.println(petParam[i]); //단순한 반복이지만 성공!
+				out.println(petParam[i]); //단순한 반복이지만 성공!!!
+				//문제는 의외로 <=였다...
 			}
 		} else {
 			out.println("좋아하는 동물을 선택해주세요.");
