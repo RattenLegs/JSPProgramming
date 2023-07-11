@@ -34,6 +34,7 @@
 			<td>session</td>
 			<td>javax.servlet.http.HttpSession</td>
 			<td>HTTP 세션 정보를 저장한다.</td>
+			<td>세션 정보 나중에 입력</td>
 		</tr>
 		<tr>
 			<td>application</td>
