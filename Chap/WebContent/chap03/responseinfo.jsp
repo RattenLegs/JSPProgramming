@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>response</title>
+<title>response와 float 연습</title>
 <style>
 .main {
 	width: 100%;
@@ -23,15 +23,16 @@
 	height: 25%;
 	float: right;
 }
-.empty{
+
+.empty {
 	width: 25%;
 	height: 25%;
 }
 </style>
 </head>
 <body>
-	<div class="main">
-		<div class="empty"></div>
+	<div class="empty"></div>
+	<section class="main">
 		<div class="left">
 			응답 정보에 헤더를 추가<br>
 		</div>
@@ -72,7 +73,7 @@
 				</tr>
 			</table>
 		</div>
-		<div class="empty"></div>
 	</div>
+	<div class="empty"></div>
 </body>
 </html>
