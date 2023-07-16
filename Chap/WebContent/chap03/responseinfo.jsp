@@ -72,8 +72,30 @@
 					<td>이름이 name인 헤더를 포함하고 있을 경우 true를, 그렇지 않을 경우 false를 리턴한다.</td>
 				</tr>
 			</table>
+
+			response 기본 객체가 제공하는 헤더 추가 메서드
+			<table border="1">
+				<th>응답 헤더</th>
+				<th>설명</th>
+				<tr>
+					<td>Cache-Control</td>
+					<td>HTTP 1.1 버전에서 지원하는 헤더로서, 이 헤더의 값을 "no-cache"로 지정하면 웹 브라우저는 응답 결과를 캐시하지 않는다.<br>
+					"no-cache"로 설정하더라도 응답 내용을 캐시 저장소에 보관할 수 있다. 
+					예를 들어, 웹 브라우저에 따라 뒤로가기 버튼을 클릭하면 캐시 저장소에 보관된 응답 내용을 사용하기도 한다.
+					응답 결과가 캐시 저장소 자체에 보관되지 않도록 하려면, 이 헤더에 "no-store"를 추가한다.</td>
+				</tr>
+				<tr>
+					<td>Pragma</td>
+					<td>HTTP 1.0 버전에서 지원하는 헤더로서, 이 헤더의 값을 "no-cache"로 지정하면 웹 브라우저는 응답 결과를 캐시에 저장하지 않는다.</td>
+				</tr>
+				<tr>
+					<td>Expires</td>
+					<td>HTTP 1.0 버전에서 지원하는 헤더로서, 응답 결과의 만료일을 지정한다. 만료일을 현재 시간보다 이전으로 설정함으로써 캐시에 보관되지 않도록 할 수 있다.</td>
+				</tr>
+
+			</table>
 		</div>
-	</div>
-	<div class="empty"></div>
+		</div>
+		<div class="empty"></div>
 </body>
 </html>
