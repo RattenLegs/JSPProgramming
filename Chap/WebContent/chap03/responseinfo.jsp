@@ -7,11 +7,11 @@
 <title>response와 float 연습</title>
 <style>
 .main {
-	width: 100%;
-	height: 100%;
-}
+	width: 50%;
+	height: 50%;
+} 
 
-.left {
+/* .left {
 	width: 25%;
 	height: 25%;
 	color: red;
@@ -22,16 +22,12 @@
 	width: 25%;
 	height: 25%;
 	float: right;
-}
+} */
 
-.empty {
-	width: 25%;
-	height: 25%;
-}
+
 </style>
 </head>
 <body>
-	<div class="empty"></div>
 	<section class="main">
 		<div class="left">
 			응답 정보에 헤더를 추가<br>
@@ -92,10 +88,8 @@
 					<td>Expires</td>
 					<td>HTTP 1.0 버전에서 지원하는 헤더로서, 응답 결과의 만료일을 지정한다. 만료일을 현재 시간보다 이전으로 설정함으로써 캐시에 보관되지 않도록 할 수 있다.</td>
 				</tr>
-
 			</table>
 		</div>
 		</div>
-		<div class="empty"></div>
 </body>
 </html>
