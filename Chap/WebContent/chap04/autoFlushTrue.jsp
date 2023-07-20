@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>autoFlush 속성값 false 예제</title>
+<title>autoFlush 속성값 true 예제</title>
 </head>
 <body>
 <% for(int i=0; i<1000; i++){ %>
