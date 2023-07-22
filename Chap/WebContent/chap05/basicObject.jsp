@@ -7,7 +7,6 @@
 <title>기본 객체 목록</title>
 </head>
 <body>
-
 	<table border="1">
 		<th>기본 객체</th>
 		<th>실제 타입</th>
@@ -61,8 +60,6 @@
 			<td>javax.lang.Throwable</td>
 			<td>익셉션 객체이다. 에러 페이지에서만 사용된다.</td>
 		</tr>
-
-
 	</table>
 
 </body>
