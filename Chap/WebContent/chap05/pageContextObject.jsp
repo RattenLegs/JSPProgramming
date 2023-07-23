@@ -7,13 +7,12 @@
 <title>pageContext 기본객체</title>
 </head>
 <body>
-	<!-- 
 	pageContext 기본 객체는 JSP 페이지와 일대일로 연결된 객체로 다음의 기능을 제공한다. 
 	- 기본 객체 구하기
 	- 속성 처리하기(5장)
 	- 에러 데이터 구하기(6장)
 	- 페이지의 흐름 제어하기(7장)
--->
+<br>
 
 	<table border="1">
 		<th>메서드</th>
