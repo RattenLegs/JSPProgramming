@@ -4,16 +4,7 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
 	id="WebApp_ID" version="4.0">
 	<display-name>Chap</display-name>
-	
-	
-	<welcome-file-list>
-		<welcome-file>index.html</welcome-file>
-		<welcome-file>index.htm</welcome-file>
-		<welcome-file>index.jsp</welcome-file>
-		<welcome-file>default.html</welcome-file>
-		<welcome-file>default.htm</welcome-file>
-		<welcome-file>default.jsp</welcome-file>
-	</welcome-file-list>
+
 
 	<context-param><!-- chap05 초기화 파라미터 추가 -->
 		<description>로깅 여부</description>
@@ -25,6 +16,16 @@
 		<param-name>debugLevel</param-name>
 		<param-value>5</param-value>
 	</context-param>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
 
 	<error-page>
 		<error-code>404</error-code>
@@ -39,7 +40,7 @@
 	<error-page>
 		<exception-type>java.lang.NullPointerException</exception-type>
 		<location>/chap06/error/errorNullPointer.jsp</location>
-	</error-page> 
+	</error-page>
 
 	<jsp-config>
 		<jsp-property-group> <!-- jsp의 프로퍼티 포함 -->
@@ -52,8 +53,8 @@
 		<!-- jsp-property-group 두개 이상 사용 가능 -->
 
 	</jsp-config>
-	
-	
+
+
 
 
 </web-app>
