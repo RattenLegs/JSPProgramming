@@ -9,8 +9,7 @@
 <body>
 
 서버정보: <%= application.getServerInfo() %> <br>
-서블릿 규약 메이저 버전: <%= application.getMajorVersion() %>
-서블릿 규약 마이너 버전: <%= application.getMinorVersion() %>
+서블릿 규약 버전: <%= application.getMajorVersion() %>.<%= application.getMinorVersion() %>
 
 </body>
 </html>
