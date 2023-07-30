@@ -3,12 +3,13 @@
 <!DOCTYPE html>
 <html>
 <style>
-.tablestyle {
+.container {
 	width: 70%;
-	/*   background-color: #f5d682; */
 	border: 1px solid black;
 }
 </style>
+<script>
+</script>
 <head>
 <meta charset="UTF-8">
 <title>application 기본 객체</title>
@@ -19,26 +20,26 @@
 	읽어올 수 있고, 웹 어플리케이션이 제공하는 자원(파일)을 읽어올 수도 있다.
 	<br>
 	<br>
-
 	<div class="leftMenu">
-	<jsp:include page="/common/leftMenu.jsp" flush="false"/>
+		<jsp:include page="/common/leftMenu.jsp" flush="false" />
 	</div>
 	<!-- web.xml에 대한 설명으로 연결(파일만들기) -->
 	<br>
-	<div class="tablestyle">
-		<div class="btn">
-		<button>초기화</button>
-		<button>웹 컨테이너</button>
-		<button>로그</button>
-		</div>
-		<br>
-		
-		<!-- 스크립트 사용해서 각 버튼 누를때마다 해당 페이지 나오게 하기 -->
-		<jsp:include page="initInfo.jsp" flush="false"/>
-		<br>
-		<jsp:include page="webContainerInfo.jsp" flush="false"/>
-		<br>
-		<jsp:include page="logInfo.jsp" flush="false"/>
+	<button>초기화</button>
+	<button>웹 컨테이너</button>
+	<button>로그</button>
+	<br>
+	<div class="container">
+		<jsp:include page="initInfo.jsp" flush="false" />
 	</div>
+	<!-- 스크립트 사용해서 각 버튼 누를때마다 해당 페이지 나오게 하기 -->
+	<div class="container">
+		<jsp:include page="webContainerInfo.jsp" flush="false" />
+	</div>
+	<br>
+	<div class="container">
+		<jsp:include page="logInfo.jsp" flush="false" />
+	</div>
+	<br>
 </body>
 </html>
