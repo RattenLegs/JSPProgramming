@@ -41,5 +41,6 @@
 		<jsp:include page="logInfo.jsp" flush="false" />
 	</div>
 	<br>
+	<!-- 스크립트 사용하기 -->
 </body>
 </html>
