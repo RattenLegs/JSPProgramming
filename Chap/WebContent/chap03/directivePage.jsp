@@ -16,7 +16,6 @@
 			<td>contentType</td>
 			<td>JSP가 생성할 문서의 MIME 타입과 캐릭터 인코딩을 지정한다.</td>
 			<td>text/html</td>
-
 		</tr>
 		<tr>
 			<td>import</td>
