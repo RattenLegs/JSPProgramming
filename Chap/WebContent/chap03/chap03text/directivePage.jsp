@@ -7,11 +7,28 @@
 <title>page 디렉티브의 주요 속성</title>
 </head>
 <body>
+<!-- 
+	https://snow-line.tistory.com/204
+ -->	
+	&lt;%@ page ... &gt; 를 page 디렉티브라고 하는데, JSP 페이지에 대한 정보를 설정할 때 사용한다. <br>
+	JSP 페이지가 생성할 문서의 타입 뿐 아니라 다양한 정보를 지정할 수 있다. <br>
+	
+	<br>
+	
+	JSP 페이지의 구성 요소 <br>
+	디렉티브<br>
+	스크립트: 스크립트릿(Scriptlet), 표현식(Expression), 선언부(Declaration)<br>
+	표현 언어(Expression Language)<br>
+	기본 객체(Implicit Object)<br>
+	정적인 데이터<br>
+	표준 액션 태그<br>
+	커스텀 태그와 표준 태그 라이브러리(JSTL)<br>
+	
+	page 디렉티브의 주요 속성<br>
 	<table border="1">
 		<th>속성</th>
 		<th>설명</th>
 		<th>기본값</th>
-
 		<tr>
 			<td>contentType</td>
 			<td>JSP가 생성할 문서의 MIME 타입과 캐릭터 인코딩을 지정한다.</td>
