@@ -47,6 +47,12 @@
 	</table>
 	
 	<br>
+	page 디렉티브<br>
+	JSP 페이지에 대한 정보를 입력하기 위해 사용<br>
+	JSP 페이지가 어떤 문서를 생성하는지<br>
+	어떤 자바 클래스를 사용하는지<br>
+	세션에 참여하는지<br>
+	출력 버퍼의 존재 여부<br>
 	
 	page 디렉티브의 주요 속성<br>
 	<table border="1">
@@ -54,12 +60,12 @@
 		<th>설명</th>
 		<th>기본값</th>
 		<tr>
-			<td>contentType</td>
+			<td>contentType</td><!-- contentType 입력 시 들어가게 하자 -->
 			<td>JSP가 생성할 문서의 MIME 타입과 캐릭터 인코딩을 지정한다.</td>
 			<td>text/html</td>
 		</tr>
 		<tr>
-			<td>import</td>
+			<td>import</td><!-- import 입력 시 들어가게 하자 -->
 			<td>JSP 페이지에서 사용할 자바 클래스를 지정한다.</td>
 			<td></td>
 		</tr>
