@@ -4,14 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>trimDirectiveWhitespaces</title>
+<title>스크립트 요소</title>
 </head>
 <body>
-
-공백문자제거<br>
-
-사용례
-<!-- time과 연결 -->
 
 </body>
 </html>
