@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<form action="/chap03/viewParameter.jsp" method="post">
+<form action="/chap03/requestObject/viewParameter.jsp" method="post">
 이름: <input type="text" name="name" size="10"> <br>
 주소: <input type="text" name="address" size="30"> <br>
 좋아하는 동물:
