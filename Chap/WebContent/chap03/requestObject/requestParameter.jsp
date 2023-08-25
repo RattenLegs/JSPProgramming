@@ -83,5 +83,11 @@
 		</tr>
 	<!-- 설명 추가 -->
 	</table>
+	<%
+		// GET 방식으로 전송된 파라미터에 대해서는
+		// request.setCharacterEncoding() 메서드로 지정한 캐릭터셋이 적용되지 않음
+		request.setCharacterEncoding("euc-kr");
+	
+	%>
 </body>
 </html>
