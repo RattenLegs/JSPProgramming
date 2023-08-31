@@ -32,7 +32,6 @@
 			<td></td>
 		</tr>
 	</table>
-
-	조금 더 확실하게 정리해보기
+<!-- bufferInfo로 이동 -->
 </body>
 </html>
