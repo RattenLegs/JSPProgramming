@@ -51,9 +51,7 @@ nav{
 </head>
 <body>
 	<header></header>
-	<nav>
-		JSP 내용을 정리한 문서입니다.
-	</nav>
+
 	<section class="box">
 		<div>
 			<ul class="menu">
@@ -66,6 +64,16 @@ nav{
 			</ul>
 		</div>
 	</section>
+		<nav>
+		<div></div>
+		<div>
+		JSP 내용을 정리한 문서입니다.
+		<br>
+		몇몇 책과 페이지를 참조했습니다.<br>
+		공부용으로 만들었기에 문제가 된다면 바로 삭제하도록 하겠습니다.<br>
+		</div>
+		<div></div>
+	</nav>
 	<footer></footer>
 </body>
 </html>
