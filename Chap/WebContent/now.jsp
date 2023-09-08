@@ -75,6 +75,5 @@ nav{
 		<div></div>
 	</nav>
 	<footer></footer>
-	<!--  -->
 </body>
 </html>
