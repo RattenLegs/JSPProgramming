@@ -55,10 +55,10 @@ nav{
 	<section class="box">
 		<div>
 			<ul class="menu">
-				<li><a href="#">기초</a></li>
+				<li><a href="/chap02/basicWeb/basicWebInfo.jsp">기초</a></li>
 				<li><a href="/chap03/JSPDirective/pageDirective/directivePageMain.jsp">디렉티브</a></li>
-				<li><a href="#">스크립트 요소</a></li>
-				<li><a href="#">기본 객체</a></li>
+				<li><a href="/chap03/script/scriptMain.jsp">스크립트 요소</a></li>
+				<li><a href="/chap05/chap05main.jsp">기본 객체</a></li>
 				<li><a href="#">표현 언어</a></li>
 				<li><a href="#">태그</a></li>
 			</ul>
