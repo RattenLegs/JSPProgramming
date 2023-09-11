@@ -61,6 +61,7 @@ nav{
 				<li><a href="/chap05/chap05main.jsp">기본 객체</a></li>
 				<li><a href="#">표현 언어</a></li>
 				<li><a href="#">태그</a></li>
+				<li><a href="#">기타</a></li>
 			</ul>
 		</div>
 	</section>

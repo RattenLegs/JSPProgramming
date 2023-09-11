@@ -38,7 +38,7 @@
 
 		<b>request.getParameterNames() 메서드 사용</b><br>
 		<%
-			Enumeration paramEnum = request.getParameterNames();
+			Enumeration<?> paramEnum = request.getParameterNames(); //연구요망
 		while (paramEnum.hasMoreElements()) {
 			String name = (String) paramEnum.nextElement();
 		%>
@@ -49,7 +49,7 @@
 
 		<b>request.getParameterMap() 메서드 사용 - name: </b>
 		<%
-			Map parameterMap = request.getParameterMap();
+			Map<?,?> parameterMap = request.getParameterMap(); //연구요망
 		String[] nameParam = (String[]) parameterMap.get("name");
 		if (nameParam != null) {
 			out.println(nameParam[0]); //out 기본 객체 사용
