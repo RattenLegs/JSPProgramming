@@ -11,12 +11,15 @@
 	<br>
 	<br>1. 웹 브라우저에 헤더 정보 전송하기
 	<br>
-	<br> response 기본 객체가 제공하는 헤더 추가 메소드
+	<br>
 	<br>
 
 	<table border="1">
+	<caption> response 기본 객체가 제공하는 헤더 추가 메소드</caption>
+	<tr>
 		<th>메서드</th>
 		<th>설명</th>
+	</tr>	
 		<tr>
 			<td>addDateHeader(String name, long date)</td>
 			<td>name 헤더에 date를 추가한다.</td>

@@ -8,10 +8,13 @@
 </head>
 <body>
 	<table border="1">
+	<caption>기본 객체 목록</caption>
+	<tr>
 		<th>기본 객체</th>
 		<th>실제 타입</th>
 		<th>설명</th>
 		<th>기타</th>
+	</tr>
 		<tr>
 			<td>request</td>
 			<td>javax.servlet.http.HttpServletRequest</td>

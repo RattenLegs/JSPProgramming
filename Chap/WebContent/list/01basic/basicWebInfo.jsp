@@ -17,12 +17,11 @@
 	<br> URL(Uniform Resource Locator): 일종의 주소
 	<br>
 	<img src="/picture/URLComponent.png">
-	<br> URL의 주요 구성 요소
+	<br> 
 	<table border="1">
+	<caption>URL의 주요 구성 요소</caption>
 		<tr>
 			<th>구성 요소</th>
-		</tr>
-		<tr>
 			<th>설명</th>
 		</tr>
 		<tr>

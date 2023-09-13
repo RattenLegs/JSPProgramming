@@ -15,9 +15,12 @@
 <br>
 
 	<table border="1">
+	<tr>
+	
 		<th>메서드</th>
 		<th>리턴 타입</th>
 		<th>설명</th>
+	</tr>
 		<tr>
 			<td>getRequest()</td>
 			<td>ServlerRequest</td>

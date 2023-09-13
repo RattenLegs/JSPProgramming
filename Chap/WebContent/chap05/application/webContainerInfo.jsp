@@ -4,9 +4,11 @@
 	application 기본 객체는 현재 사용중인 웹 컨테이너에 대한 정보를 읽어오는 메서드를 제공하고 있다. <br>
 	application 기본 객체가 제공하는 서버 정보 관련 메서드 <br>
 	<table border="1">
+	<tr>
 		<th>메서드</th>
 		<th>리턴 타입</th>
 		<th>설명</th>
+	</tr>
 		<tr>
 			<td>getServerInfo()</td>
 			<td>String</td>

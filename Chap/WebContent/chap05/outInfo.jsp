@@ -27,13 +27,16 @@
 	<br>
 
 	<br> JSP 페이지가 사용하는 버퍼는 실제로 out 기본 객체가 내부적으로 사용하고 있는 버퍼이다.
-	<br> out 기본 객체의 버퍼 관련 메서드
+	<br>
 	<br>
 
 	<table border="1">
-		<th>메서드</th>
-		<th>리턴 타입</th>
-		<th>설명</th>
+		<caption>out 기본 객체의 버퍼 관련 메서드</caption>
+		<tr>
+			<th>메서드</th>
+			<th>리턴 타입</th>
+			<th>설명</th>
+		</tr>
 		<tr>
 			<td>getBufferSize()</td>
 			<td>int</td>
@@ -52,7 +55,8 @@
 		<tr>
 			<td>clearBuffer()</td>
 			<td>void</td>
-			<td>버퍼의 내용을 비운다. clear() 메서드와 달리 버퍼를 플러시한 경우에도 IOException을 발생시키지 않는다.</td>
+			<td>버퍼의 내용을 비운다. clear() 메서드와 달리 버퍼를 플러시한 경우에도 IOException을
+				발생시키지 않는다.</td>
 		</tr>
 		<tr>
 			<td>flush()</td>

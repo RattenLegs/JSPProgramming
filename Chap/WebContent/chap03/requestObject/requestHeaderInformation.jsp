@@ -10,13 +10,16 @@
 	HTTP 프로토콜은 헤더 정보에 부가적인 정보를 담도록 한다.
 	<br> 웹 브라우저의 종류, 선호하는 언어에 대한 정보 등
 	<br>
-	<br> request 기본 객체가 제공하는 헤더 관련 메서드
+	<br>
 	<br>
 
 	<table border="1">
+	<caption>request 기본 객체가 제공하는 헤더 관련 메서드</caption>
+	<tr>
 		<th>메서드</th>
 		<th>리턴 타입</th>
 		<th>설명</th>
+	</tr>
 		<tr>
 			<td>getHeader(String name)</td>
 			<td>String</td>

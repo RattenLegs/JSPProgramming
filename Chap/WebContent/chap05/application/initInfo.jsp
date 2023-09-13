@@ -9,9 +9,11 @@
 	<br> application 기본 객체는 초기화 파라미터를 읽어올 수 있는 메서드를 제공하고 있다. <br>
 
 	<table border="1">
+	<tr>
 		<th>메서드</th>
 		<th>리턴 타입</th>
 		<th>설명</th>
+	</tr>
 		<tr>
 			<td>getInitParameter(String name)</td>
 			<td>String</td>

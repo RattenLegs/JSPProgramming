@@ -10,12 +10,15 @@
 
 
 
-	<br> request 기본 객체의 파라미터 읽기 메서드
+	<br>
 	<br>
 	<table border="1">
-		<th>메서드</th>
-		<th>리턴 타입</th>
-		<th>설명</th>
+		<caption>request 기본 객체의 파라미터 읽기 메서드</caption>
+		<tr>
+			<th>메서드</th>
+			<th>리턴 타입</th>
+			<th>설명</th>
+		</tr>
 		<tr>
 			<td>getParameter(String name)</td>
 			<td>String</td>
@@ -64,11 +67,14 @@
 	<br> POST 방식: 입력 폼을 보여주는 응답 화면이 사용하는 캐릭터 셋을 사용
 	<br>
 
-	<br> GET 방식으로 파라미터 전송시 인코딩 결정 규칙
+	<br> 
 	<br>
 	<table border="1">
+	<caption>GET 방식으로 파라미터 전송시 인코딩 결정 규칙</caption>
+	<tr>
 		<th>GET 방식 이용 시 파라미터 전송 방법</th>
 		<th>인코딩 결정</th>
+		</tr>
 		<tr>
 			<td>%lt;a&gt; 태그의 링크 태그에 쿼리 문자열 추가</td>
 			<td>웹 페이지 인코딩 사용</td>
@@ -81,13 +87,12 @@
 			<td>웹 브라우저의 주소에 직접 쿼리 문자열을 포함하는 URL 입력</td>
 			<td>웹 브라우저마다 다름</td>
 		</tr>
-	<!-- 설명 추가 -->
+		<!-- 설명 추가 -->
 	</table>
 	<%
 		// GET 방식으로 전송된 파라미터에 대해서는
-		// request.setCharacterEncoding() 메서드로 지정한 캐릭터셋이 적용되지 않음
-		request.setCharacterEncoding("euc-kr");
-	
+	// request.setCharacterEncoding() 메서드로 지정한 캐릭터셋이 적용되지 않음
+	request.setCharacterEncoding("euc-kr");
 	%>
 </body>
 </html>
