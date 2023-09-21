@@ -23,9 +23,9 @@ footer {
 	text-align: center;
 }  */
 /*헤더 푸터 확인 완료*/
-nav{
+/* nav{
 	height: 50%;
-}
+} */
 .box {
 	background: black;
 	text-align: center;
@@ -45,6 +45,14 @@ nav{
 	font-weight: 900;
 	text-decoration: none;
 
+}
+
+.main{
+
+width: 100%;
+height: 100%;
+background-image: url('/CSS/background/mainBackground.jpg');
+background-repeat: repeat;
 }
 </style>
 <title>JSP 정리 문서</title>
@@ -67,7 +75,7 @@ nav{
 	</section>
 		<nav>
 		<div></div>
-		<div>
+		<div class="main">
 		JSP 내용을 정리한 문서입니다.
 		<br>
 		몇몇 책과 페이지를 참조했습니다.<br>

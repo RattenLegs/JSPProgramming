@@ -15,9 +15,11 @@ CSS
 그렇지 않으면 일을 두번 세번 하게 될 것 같다.
 
 할 일
-1. CSS/JSP 책 다 읽기(크게): CSS 40% /JSP 40%
+1. CSS/JSP 책 다 읽기(크게): CSS 60% /JSP 40%
 2. JSP 책 구조 정리: 아직
-3. 큰 화면 만들기: 20%
+3. 큰 화면 만들기: 30%
 
 CSS: 속성 간단하게 정리
 list-style-type 사용해서 불릿 맞추기 - 이미지 불릿 활용
+background-repeat 사용해서 배경을 만들어 봅시다.(backgroundTest.jsp)
+그러데이션 또한 활용해봅시다. - 기본 할 수 있게됨
