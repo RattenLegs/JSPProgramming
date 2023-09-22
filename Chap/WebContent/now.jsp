@@ -8,7 +8,10 @@
 <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 
 <style>
-
+body {
+	background-image: url('/CSS/background/mainBackground.jpg');
+	background-repeat: repeat;
+}
 /* header {
 	height: 100px;
 	background: black;
@@ -44,16 +47,10 @@ footer {
 	font-size: 20px;
 	font-weight: 900;
 	text-decoration: none;
-
 }
 
-.main{
 
-width: 100%;
-height: 100%;
-background-image: url('/CSS/background/mainBackground.jpg');
-background-repeat: repeat;
-}
+
 </style>
 <title>JSP 정리 문서</title>
 </head>
@@ -64,8 +61,9 @@ background-repeat: repeat;
 		<div>
 			<ul class="menu">
 				<li><a href="/list/01basic/basicWebInfo.jsp">기초</a></li>
-				<li><a href="/chap03/JSPDirective/pageDirective/directivePageMain.jsp">디렉티브</a></li>
-				<li><a href="/chap03/script/scriptMain.jsp">스크립트 요소</a></li>
+				<li><a
+					href="/list/02directive/JSPDirective/pageDirective/directivePageMain.jsp">디렉티브</a></li>
+				<li><a href="/list/03script/script/scriptMain.jsp">스크립트 요소</a></li>
 				<li><a href="/chap05/chap05main.jsp">기본 객체</a></li>
 				<li><a href="#">표현 언어</a></li>
 				<li><a href="#">태그</a></li>
@@ -73,13 +71,11 @@ background-repeat: repeat;
 			</ul>
 		</div>
 	</section>
-		<nav>
+	<nav>
 		<div></div>
 		<div class="main">
-		JSP 내용을 정리한 문서입니다.
-		<br>
-		몇몇 책과 페이지를 참조했습니다.<br>
-		공부용으로 만들었기에 문제가 된다면 바로 삭제하도록 하겠습니다.<br>
+			JSP 내용을 정리한 문서입니다. <br> 몇몇 책과 페이지를 참조했습니다.<br> 공부용으로 만들었기에
+			문제가 된다면 바로 삭제하도록 하겠습니다.<br>
 		</div>
 		<div></div>
 	</nav>

@@ -5,6 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>page 디렉티브의 주요 속성</title>
+<style>
+body {
+	background-image: url('/CSS/background/mainBackground.jpg');
+	background-repeat: repeat;
+}
+</style>
 </head>
 <body>
 

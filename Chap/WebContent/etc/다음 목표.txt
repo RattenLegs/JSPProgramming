@@ -21,5 +21,7 @@ CSS
 
 CSS: 속성 간단하게 정리
 list-style-type 사용해서 불릿 맞추기 - 이미지 불릿 활용
-background-repeat 사용해서 배경을 만들어 봅시다.(backgroundTest.jsp)
+background-repeat 사용해서 배경을 만들어 봅시다.(now.jsp // 조금 더 보강)
 그러데이션 또한 활용해봅시다. - 기본 할 수 있게됨
+
+body의 background css 따로 빼기
