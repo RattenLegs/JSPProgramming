@@ -3,13 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 <title>page 디렉티브의 주요 속성</title>
+<link rel="stylesheet" href="/CSS/base/base.css">
 <style>
-body {
-	background-image: url('/CSS/background/mainBackground.jpg');
-	background-repeat: repeat;
-}
+
 </style>
 </head>
 <body>

@@ -1,17 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%-- <%@ page import="chap13.Clock"%> --%>
 <!DOCTYPE html>
-<!-- 모든 파일 이렇게 바꿔야함 -->
 <html>
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
-
+<title>JSP 정리 문서</title>
+<link rel="stylesheet" href="CSS/base/base.css">    
 <style>
-body {
-	background-image: url('/CSS/background/mainBackground.jpg');
-	background-repeat: repeat;
-}
+
 /* header {
 	height: 100px;
 	background: black;
@@ -49,14 +45,10 @@ footer {
 	text-decoration: none;
 }
 
-
-
 </style>
-<title>JSP 정리 문서</title>
 </head>
 <body>
 	<header></header>
-
 	<section class="box">
 		<div>
 			<ul class="menu">

@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>구성 요소</title>
+<link rel="stylesheet" href="CSS/base/base.css">
 </head>
 <body>
 <div>

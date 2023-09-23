@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>5장 시작 페이지</title>
+<link rel="stylesheet" href="/CSS/base/base.css">
 </head>
 <body>
 방대하기 때문에 여기서 시작<br>

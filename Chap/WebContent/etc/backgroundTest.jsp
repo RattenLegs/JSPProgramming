@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>테스트</title>
+<link rel="stylesheet" href="CSS/base/base.css">
 <style>
 .grad{
 	

@@ -5,9 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <title>웹 프로그래밍 기초</title>
+<link rel="stylesheet" href="/CSS/base/base.css">
 </head>
 <body>
-	웹 플로그래밍을 하려면 웹에 대한 이해가 필요하다. 웹이 무엇이고, 웹과 관련된 주요 구성 요소에 대해 살펴볼 것이다.
+	웹 프로그래밍을 하려면 웹에 대한 이해가 필요하다. 웹이 무엇이고, 웹과 관련된 주요 구성 요소에 대해 살펴볼 것이다.
 
 
 	<div class="leftMenu">
