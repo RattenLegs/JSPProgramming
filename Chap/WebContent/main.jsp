@@ -28,38 +28,42 @@ footer {
 
 /*container*/
 #container {
-	width: 960px;
+	width: 1200px;
 	margin: 0 auto;
 	border: 1px solid black;
 }
 
 /*section*/
-/* .box {
+.box {
 	background: black;
 	text-align: center;
 	margin: 0 auto;
-} */
+} 
 
+.menu{
+	margin: 0 auto;
+}
 .menu li {
-	display: inline-block;
-	width: 10%;
-	height: 100px;
+	display: inline-block;/*이해 잘 안되니 계속 해보기*/
+ 	width: 240px; 
+	height: 100px; 
 	line-height: 100px;
 	text-align: center;
 }
-/* 
+
 .menu li a {
 	color: white;
 	font-size: 20px;
 	font-weight: 900;
-	text-decoration: none;
-} */
+	text-decoration: none;/*선으로 텍스트를 꾸미게 하는 속성*/
+}
 /*section 끝*/
 </style>
 </head>
 <body>
 	<header></header>
 	<div id="container">
+		<!-- 메뉴 선택 박스 -->
 		<section class="box">
 			<div>
 				<ul class="menu">
@@ -74,13 +78,13 @@ footer {
 				</ul>
 			</div>
 		</section>
-		<nav>
+<!-- 		<nav>
 			<div class="main">
 				JSP 내용을 정리한 문서입니다. <br> 몇몇 책과 페이지를 참조했습니다.<br> 공부용으로 만들었기에
 				문제가 된다면 바로 삭제하도록 하겠습니다.<br>
 			</div>
 			<div></div>
-		</nav>
+		</nav> -->
 	</div><!-- container 끝 -->
 	<footer></footer>
 </body>
