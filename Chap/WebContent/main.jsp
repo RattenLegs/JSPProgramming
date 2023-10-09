@@ -29,8 +29,10 @@ footer {
 /*container*/
 #container {
 	width: 1200px;
+	height: 900px;
 	margin: 0 auto;
 	border: 1px solid black;
+	background: white;
 }
 
 /*section*/
@@ -38,15 +40,16 @@ footer {
 	background: black;
 	text-align: center;
 	margin: 0 auto;
-} 
+}
 
-.menu{
+.menu {
 	margin: 0 auto;
 }
+
 .menu li {
-	display: inline-block;/*이해 잘 안되니 계속 해보기*/
- 	width: 240px; 
-	height: 100px; 
+	display: inline-block; /*이해 잘 안되니 계속 해보기*/
+	width: 240px;
+	height: 100px;
 	line-height: 100px;
 	text-align: center;
 }
@@ -55,7 +58,11 @@ footer {
 	color: white;
 	font-size: 20px;
 	font-weight: 900;
-	text-decoration: none;/*선으로 텍스트를 꾸미게 하는 속성*/
+	text-decoration: none; /*선으로 텍스트를 꾸미게 하는 속성*/
+}
+
+.main {
+	height: 650px;
 }
 /*section 끝*/
 </style>
@@ -75,17 +82,26 @@ footer {
 					<li><a href="#">표현 언어</a></li>
 					<li><a href="#">태그</a></li>
 					<li><a href="#">기타</a></li>
+					<!-- li를 누르면 서로 다른 글이 나오게 한다. -->
 				</ul>
 			</div>
 		</section>
-<!-- 		<nav>
+		<nav>
 			<div class="main">
 				JSP 내용을 정리한 문서입니다. <br> 몇몇 책과 페이지를 참조했습니다.<br> 공부용으로 만들었기에
 				문제가 된다면 바로 삭제하도록 하겠습니다.<br>
 			</div>
 			<div></div>
-		</nav> -->
-	</div><!-- container 끝 -->
+		</nav>
+		<div class="moveBtn">
+			<button>이동</button>
+<!-- 
+	위쪽 메뉴들을 누르면 이동 버튼의 클래스를 바뀌게 하고 클래스마다 스크립트를 설정해 이동하게 할 수 있을까? 
+	조건문을 통해 클래스가 특정 클래스 이름이면 이동하게 설정하면 될 거 같다.
+-->
+		</div>
+	</div>
+	<!-- container 끝 -->
 	<footer></footer>
 </body>
 </html>
