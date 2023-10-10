@@ -74,14 +74,13 @@ footer {
 		<section class="box">
 			<div>
 				<ul class="menu">
-					<li><a href="/list/01basic/basicWebInfo.jsp">기초</a></li>
-					<li><a
-						href="/list/02directive/JSPDirective/pageDirective/directivePageMain.jsp">디렉티브</a></li>
-					<li><a href="/list/03script/script/scriptMain.jsp">스크립트 요소</a></li>
-					<li><a href="/chap05/chap05main.jsp">기본 객체</a></li>
-					<li><a href="#">표현 언어</a></li>
-					<li><a href="#">태그</a></li>
-					<li><a href="#">기타</a></li>
+					<li class="basic"><a href="#">기초</a></li>
+					<li class="directive"><a href="#">디렉티브</a></li>
+					<li class="script"><a href="#">스크립트 요소</a></li>
+					<li class="object"><a href="#">기본 객체</a></li>
+					<li class="EL"><a href="#">표현 언어</a></li>
+					<li class="tag"><a href="#">태그</a></li>
+					<li class="ETC"><a href="#">기타</a></li>
 					<!-- li를 누르면 서로 다른 글이 나오게 한다. -->
 				</ul>
 			</div>
@@ -94,7 +93,7 @@ footer {
 			<div></div>
 		</nav>
 		<div class="moveBtn">
-			<button>이동</button>
+			<button class="">이동</button>
 <!-- 
 	위쪽 메뉴들을 누르면 이동 버튼의 클래스를 바뀌게 하고 클래스마다 스크립트를 설정해 이동하게 할 수 있을까? 
 	조건문을 통해 클래스가 특정 클래스 이름이면 이동하게 설정하면 될 거 같다.
@@ -105,3 +104,11 @@ footer {
 	<footer></footer>
 </body>
 </html>
+
+<!-- 
+<a href="/list/01basic/basicWebInfo.jsp">
+<a href="/list/02directive/JSPDirective/pageDirective/directivePageMain.jsp">
+href="/list/03script/script/scriptMain.jsp"
+href="/chap05/chap05main.jsp"
+href="/list/03script/script/scriptMain.jsp"
+ -->
