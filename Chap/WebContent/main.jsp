@@ -42,11 +42,11 @@ footer {
 	margin: 0 auto;
 }
 
-.menu {
+#menu {
 	margin: 0 auto;
 }
 
-.menu li {
+#menu li {
 	display: inline-block; /*이해 잘 안되니 계속 해보기*/
 	width: 240px;
 	height: 100px;
@@ -54,7 +54,7 @@ footer {
 	text-align: center;
 }
 
-.menu li a {
+#menu li a {
 	color: white;
 	font-size: 20px;
 	font-weight: 900;
@@ -74,7 +74,7 @@ footer {
 		<!-- 메뉴 선택 박스 -->
 		<section class="box">
 			<div>
-				<ul class="menu">
+				<ul id="menu">
 					<li id="basic"><a href="#">기초</a></li>
 					<li id="directive"><a href="#">디렉티브</a></li>
 					<li id="script"><a href="#">스크립트 요소</a></li>
@@ -82,7 +82,6 @@ footer {
 					<li id="EL"><a href="#">표현 언어</a></li>
 					<li id="tag"><a href="#">태그</a></li>
 					<li id="ETC"><a href="#">기타</a></li>
-					<!-- li를 누르면 서로 다른 글이 나오게 한다. -->
 				</ul>
 			</div>
 		</section>
@@ -117,10 +116,6 @@ footer {
 		</nav>
 		<div class="moveBtn">
 			<button>이동</button>
-			<!-- 
-	위쪽 메뉴들을 누르면 이동 버튼의 클래스를 바뀌게 하고 클래스마다 스크립트를 설정해 이동하게 할 수 있을까? 
-	조건문을 통해 클래스가 특정 클래스 이름이면 이동하게 설정하면 될 거 같다.
--->
 		</div>
 	</div>
 	<!-- container 끝 -->
@@ -136,7 +131,6 @@ footer {
 		let $childContent = [$content.childNodes[1], $content.childNodes[3], $content.childNodes[5], $content.childNodes[7], $content.childNodes[9], $content.childNodes[11], $content.childNodes[13]]; //이걸 좀 보기 쉽게 바꿀 수 없나?
 		
 		/*왜 클래스에 먹이는건 안되는가?*/
-
 		for(var i=0; i<=6; i++){
 					$childContent[i].style.display = 'none';
 				}
