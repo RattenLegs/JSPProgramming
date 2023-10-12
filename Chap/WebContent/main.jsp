@@ -127,43 +127,22 @@ footer {
 	<footer>푸터</footer>
 
 	<!--스크립트-->
-<script>
+	<script>
 		let $menu = document.getElementById('menu');
+		let $childMenu = [$menu.childNodes[1], $menu.childNodes[3], $menu.childNodes[5], $menu.childNodes[7], $menu.childNodes[9], $menu.childNodes[11], $menu.childNodes[13]];
+		
 		/*여기서부터*/
 		let $content = document.getElementById('content');
 		let $childContent = [$content.childNodes[1], $content.childNodes[3], $content.childNodes[5], $content.childNodes[7], $content.childNodes[9], $content.childNodes[11], $content.childNodes[13]]; //이걸 좀 보기 쉽게 바꿀 수 없나?
 		
-		/*기초*/
-		let $basicBtn = document.getElementById('basic');
-
-		/*변수 선언*/
-
-		/*디렉티브*/
-		let $directiveBtn = document.getElementById('directive');
-
-		/*스크립트*/
-		let $scriptBtn = document.getElementById('script');
-
-
-		/*오브젝트*/
-		let $objectBtn = document.getElementById('object');
-
-		/*EL*/
-		let $ELBtn = document.getElementById('EL');
-
-		/*tag*/
-		let $tagBtn = document.getElementById('tag');
-
-		/*ETC*/
-		let $ETCBtn = document.getElementById('ETC');
 		/*왜 클래스에 먹이는건 안되는가?*/
 
 		for(var i=0; i<=6; i++){
 					$childContent[i].style.display = 'none';
 				}
-		/*a태그 클릭 시*/
+
 		/*기초*/
-		$basicBtn.addEventListener('click', function () {
+		$childMenu[0].addEventListener('click', function () {
 			if ($childContent[0].style.display === 'none') {
 				/*전체 none*/
 				for(var i=0; i<=6; i++){
@@ -176,7 +155,7 @@ footer {
 		})
 
 		/*디렉티브*/
-		$directiveBtn.addEventListener('click', function () {
+		$childMenu[1].addEventListener('click', function () {
 			if ($childContent[1].style.display === 'none') {
 				/*전체 none*/
 				for(var i=0; i<=6; i++){
@@ -189,7 +168,7 @@ footer {
 		})
 
 		/*스크립트*/
-		$scriptBtn.addEventListener('click', function () {
+		$childMenu[2].addEventListener('click', function () {
 			if ($childContent[2].style.display === 'none') {
 				/*전체 none*/
 				for(var i=0; i<=6; i++){
@@ -202,7 +181,7 @@ footer {
 		})
 
 		/*오브젝트*/
-		$objectBtn.addEventListener('click', function () {
+		$childMenu[3].addEventListener('click', function () {
 			if ($childContent[3].style.display === 'none') {
 				/*전체 none*/
 				for(var i=0; i<=6; i++){
@@ -215,7 +194,7 @@ footer {
 		})
 
 		/*EL*/
-		$ELBtn.addEventListener('click', function () {
+		$childMenu[4].addEventListener('click', function () {
 			if ($childContent[4].style.display === 'none') {
 				/*전체 none*/
 				for(var i=0; i<=6; i++){
@@ -227,7 +206,7 @@ footer {
 			}
 		})
 		/*Tag*/
-		$tagBtn.addEventListener('click', function () {
+		$childMenu[5].addEventListener('click', function () {
 			if ($childContent[5].style.display === 'none') {
 				/*전체 none*/
 				for(var i=0; i<=6; i++){
@@ -240,7 +219,7 @@ footer {
 		})
 
 		/*ETC*/
-		$ETCBtn.addEventListener('click', function () {
+		$childMenu[6].addEventListener('click', function () {
 			if ($childContent[6].style.display === 'none') {
 				/*전체 none*/
 				for(var i=0; i<=6; i++){
