@@ -68,8 +68,9 @@ footer {
 </style>
 </head>
 <body>
-	<header></header>
+	<header>JSP 공부</header>
 	<div id="container">
+
 		<!-- 메뉴 선택 박스 -->
 		<section class="box">
 			<div>
@@ -123,175 +124,134 @@ footer {
 		</div>
 	</div>
 	<!-- container 끝 -->
-	<footer></footer>
+	<footer>푸터</footer>
 
 	<!--스크립트-->
-	<script>
-		const $menu = document.getElementsByClassName('menu');
-		console.log($menu);
+<script>
+		let $menu = document.getElementById('menu');
+		/*여기서부터*/
+		let $content = document.getElementById('content');
+		let $childContent = [$content.childNodes[1], $content.childNodes[3], $content.childNodes[5], $content.childNodes[7], $content.childNodes[9], $content.childNodes[11], $content.childNodes[13]]; //이걸 좀 보기 쉽게 바꿀 수 없나?
+		
+		/*기초*/
+		let $basicBtn = document.getElementById('basic');
 
 		/*변수 선언*/
 
-		/*기초*/
-		const $basicBtn = document.getElementById('basic');
-		const $basicContent = document.getElementById('basicContent');
-		$basicContent.style.display = 'none';
-
 		/*디렉티브*/
-		const $directiveBtn = document.getElementById('directive');
-		const $directiveContent = document.getElementById('directiveContent');
-		$directiveContent.style.display = 'none';
+		let $directiveBtn = document.getElementById('directive');
 
 		/*스크립트*/
-		const $scriptBtn = document.getElementById('script');
-		const $scriptContent = document.getElementById('scriptContent');
-		$scriptContent.style.display = 'none';
+		let $scriptBtn = document.getElementById('script');
+
 
 		/*오브젝트*/
-		const $objectBtn = document.getElementById('object');
-		const $objectContent = document.getElementById('objectContent');
-		$objectContent.style.display = 'none';
+		let $objectBtn = document.getElementById('object');
 
 		/*EL*/
-		const $ELBtn = document.getElementById('EL');
-		const $ELContent = document.getElementById('ELContent');
-		$ELContent.style.display = 'none';
+		let $ELBtn = document.getElementById('EL');
 
 		/*tag*/
-		const $tagBtn = document.getElementById('tag');
-		const $tagContent = document.getElementById('tagContent');
-		$tagContent.style.display = 'none';
+		let $tagBtn = document.getElementById('tag');
 
 		/*ETC*/
-		const $ETCBtn = document.getElementById('ETC');
-		const $ETCContent = document.getElementById('ETCContent');
-		$ETCContent.style.display = 'none';
+		let $ETCBtn = document.getElementById('ETC');
 		/*왜 클래스에 먹이는건 안되는가?*/
 
+		for(var i=0; i<=6; i++){
+					$childContent[i].style.display = 'none';
+				}
 		/*a태그 클릭 시*/
 		/*기초*/
 		$basicBtn.addEventListener('click', function () {
-			if ($basicContent.style.display == 'none') {
-				$basicContent.style.display = 'none';
-				$directiveContent.style.display = 'none';
-				$scriptContent.style.display = 'none';
-				$objectContent.style.display = 'none';
-				$ELContent.style.display = 'none';
-				$tagContent.style.display = 'none';
-				$ETCContent.style.display = 'none';
-
-				$basicContent.style.display = 'block';
-
-			} else if ($basicContent.style.display == 'block') {
-				$basicContent.style.display = 'none';
+			if ($childContent[0].style.display === 'none') {
+				/*전체 none*/
+				for(var i=0; i<=6; i++){
+					$childContent[i].style.display = 'none';
+				}
+				$childContent[0].style.display = 'block';
+			} else if ($childContent[0].style.display === 'block') {
+				$childContent[0].style.display = 'none';
 			}
 		})
 
 		/*디렉티브*/
 		$directiveBtn.addEventListener('click', function () {
-			if ($directiveContent.style.display == 'none') {
-				$basicContent.style.display = 'none';
-				$directiveContent.style.display = 'none';
-				$scriptContent.style.display = 'none';
-				$objectContent.style.display = 'none';
-				$ELContent.style.display = 'none';
-				$tagContent.style.display = 'none';
-				$ETCContent.style.display = 'none';
-
-				$directiveContent.style.display = 'block';
-			} else if ($directiveContent.style.display == 'block') {
-				$directiveContent.style.display = 'none';
+			if ($childContent[1].style.display === 'none') {
+				/*전체 none*/
+				for(var i=0; i<=6; i++){
+					$childContent[i].style.display = 'none';
+				}
+				$childContent[1].style.display = 'block';
+			} else if ($childContent[1].style.display === 'block') {
+				$childContent[1].style.display = 'none';
 			}
 		})
 
 		/*스크립트*/
 		$scriptBtn.addEventListener('click', function () {
-			if ($scriptContent.style.display == 'none') {
-				$basicContent.style.display = 'none';
-				$directiveContent.style.display = 'none';
-				$scriptContent.style.display = 'none';
-				$objectContent.style.display = 'none';
-				$ELContent.style.display = 'none';
-				$tagContent.style.display = 'none';
-				$ETCContent.style.display = 'none';
-
-				$scriptContent.style.display = 'block';
-			} else if ($scriptContent.style.display == 'block') {
-				$scriptContent.style.display = 'none';
+			if ($childContent[2].style.display === 'none') {
+				/*전체 none*/
+				for(var i=0; i<=6; i++){
+					$childContent[i].style.display = 'none';
+				}
+				$childContent[2].style.display = 'block';
+			} else if ($childContent[2].style.display == 'block') {
+				$childContent[2].style.display = 'none';
 			}
 		})
 
 		/*오브젝트*/
 		$objectBtn.addEventListener('click', function () {
-			if ($objectContent.style.display == 'none') {
-				$basicContent.style.display = 'none';
-				$directiveContent.style.display = 'none';
-				$scriptContent.style.display = 'none';
-				$objectContent.style.display = 'none';
-				$ELContent.style.display = 'none';
-				$tagContent.style.display = 'none';
-				$ETCContent.style.display = 'none';
-
-				$objectContent.style.display = 'block';
-			} else if ($objectContent.style.display == 'block') {
-				$objectContent.style.display = 'none';
+			if ($childContent[3].style.display === 'none') {
+				/*전체 none*/
+				for(var i=0; i<=6; i++){
+					$childContent[i].style.display = 'none';
+				}
+				$childContent[3].style.display = 'block';
+			} else if ($childContent[3].style.display === 'block') {
+				$childContent[3].style.display = 'none';
 			}
 		})
 
 		/*EL*/
 		$ELBtn.addEventListener('click', function () {
-			if ($ELContent.style.display == 'none') {
-				$basicContent.style.display = 'none';
-				$directiveContent.style.display = 'none';
-				$scriptContent.style.display = 'none';
-				$objectContent.style.display = 'none';
-				$ELContent.style.display = 'none';
-				$tagContent.style.display = 'none';
-				$ETCContent.style.display = 'none';
-
-				$ELContent.style.display = 'block';
-			} else if ($ELContent.style.display == 'block') {
-				$ELContent.style.display = 'none';
+			if ($childContent[4].style.display === 'none') {
+				/*전체 none*/
+				for(var i=0; i<=6; i++){
+					$childContent[i].style.display = 'none';
+				}
+				$childContent[4].style.display = 'block';
+			} else if ($childContent[4].style.display === 'block') {
+				$childContent[4].style.display = 'none';
 			}
 		})
 		/*Tag*/
 		$tagBtn.addEventListener('click', function () {
-			if ($tagContent.style.display == 'none') {
-				$basicContent.style.display = 'none';
-				$directiveContent.style.display = 'none';
-				$scriptContent.style.display = 'none';
-				$objectContent.style.display = 'none';
-				$ELContent.style.display = 'none';
-				$tagContent.style.display = 'none';
-				$ETCContent.style.display = 'none';
-
-				$tagContent.style.display = 'block';
-			} else if ($tagContent.style.display == 'block') {
-				$tagContent.style.display = 'none';
+			if ($childContent[5].style.display === 'none') {
+				/*전체 none*/
+				for(var i=0; i<=6; i++){
+					$childContent[i].style.display = 'none';
+				}
+				$childContent[5].style.display = 'block';
+			} else if ($childContent[5].style.display === 'block') {
+				$childContent[5].style.display = 'none';
 			}
 		})
 
 		/*ETC*/
 		$ETCBtn.addEventListener('click', function () {
-			if ($ETCContent.style.display == 'none') {
-				$basicContent.style.display = 'none';
-				$directiveContent.style.display = 'none';
-				$scriptContent.style.display = 'none';
-				$objectContent.style.display = 'none';
-				$ELContent.style.display = 'none';
-				$tagContent.style.display = 'none';
-				$ETCContent.style.display = 'none';
-
-				$ETCContent.style.display = 'block';
-			} else if ($ETCContent.style.display == 'block') {
-				$ETCContent.style.display = 'none';
+			if ($childContent[6].style.display === 'none') {
+				/*전체 none*/
+				for(var i=0; i<=6; i++){
+					$childContent[i].style.display = 'none';
+				}
+				$childContent[6].style.display = 'block';
+			} else if ($childContent[6].style.display === 'block') {
+				$childContent[6].style.display = 'none';
 			}
 		})
 
-		/*
-					일일히 다 추가할 수 없으니까 토글 시 한번에 다 꺼지는 방법이 필요함
-					배열을 설정한 후, 배열의 값에서 block이 2개 이상이면 발동하게 할 수 있나?
-		*/
 	</script>
 </body>
 </html>
