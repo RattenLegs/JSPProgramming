@@ -123,110 +123,47 @@ footer {
 
 	<!--스크립트-->
 	<script>
+		/*상단 변수 정리*/
 		let $menu = document.getElementById('menu');
-		let $childMenu = [$menu.childNodes[1], $menu.childNodes[3], $menu.childNodes[5], $menu.childNodes[7], $menu.childNodes[9], $menu.childNodes[11], $menu.childNodes[13]];
-		
-		/*여기서부터*/
+		let $childMenu = [$menu.childNodes[1], $menu.childNodes[3], $menu.childNodes[5], $menu.childNodes[7], $menu
+			.childNodes[9], $menu.childNodes[11], $menu.childNodes[13]
+		];
+
+		/*하단 변수 정리*/
 		let $content = document.getElementById('content');
-		let $childContent = [$content.childNodes[1], $content.childNodes[3], $content.childNodes[5], $content.childNodes[7], $content.childNodes[9], $content.childNodes[11], $content.childNodes[13]]; //이걸 좀 보기 쉽게 바꿀 수 없나?
-		
-		/*왜 클래스에 먹이는건 안되는가?*/
-		function hide(){
-			for(var i=0; i<=6; i++){
-                $childContent[i].style.display = 'none';
-            }}
+		let $childContent = [$content.childNodes[1], $content.childNodes[3], $content.childNodes[5], $content.childNodes[7],
+			$content.childNodes[9], $content.childNodes[11], $content.childNodes[13]
+		]; //이걸 좀 보기 쉽게 바꿀 수 없나?
+
+		/*하단 화면 감추기 함수*/
+		function hide() {
+			for (var i = 0; i <= 6; i++) {
+				$childContent[i].style.display = 'none';
+			}
+		}
+
+		/*하단 화면 감추기*/
 		hide()
 		
-		/*기초*/
-		$childMenu[0].addEventListener('click', function () {
-			if ($childContent[0].style.display === 'none') {
-				/*전체 none*/
-				for(var i=0; i<=6; i++){
-					$childContent[i].style.display = 'none';
+		/*하단 버튼 활성화 함수*/
+		function clickBtn(number) {
+			$childMenu[number].addEventListener('click', function () {
+				if ($childContent[number].style.display === 'none') {
+					/*전체 none*/
+					for (var i = 0; i <= 6; i++) {
+						$childContent[i].style.display = 'none';
+					}
+					$childContent[number].style.display = 'block';
+				} else if ($childContent[number].style.display === 'block') {
+					$childContent[number].style.display = 'none';
 				}
-				$childContent[0].style.display = 'block';
-			} else if ($childContent[0].style.display === 'block') {
-				$childContent[0].style.display = 'none';
-			}
-		})
+			})
+		}	
 
-		/*디렉티브*/
-		$childMenu[1].addEventListener('click', function () {
-			if ($childContent[1].style.display === 'none') {
-				/*전체 none*/
-				for(var i=0; i<=6; i++){
-					$childContent[i].style.display = 'none';
-				}
-				$childContent[1].style.display = 'block';
-			} else if ($childContent[1].style.display === 'block') {
-				$childContent[1].style.display = 'none';
-			}
-		})
-
-		/*스크립트*/
-		$childMenu[2].addEventListener('click', function () {
-			if ($childContent[2].style.display === 'none') {
-				/*전체 none*/
-				for(var i=0; i<=6; i++){
-					$childContent[i].style.display = 'none';
-				}
-				$childContent[2].style.display = 'block';
-			} else if ($childContent[2].style.display == 'block') {
-				$childContent[2].style.display = 'none';
-			}
-		})
-
-		/*오브젝트*/
-		$childMenu[3].addEventListener('click', function () {
-			if ($childContent[3].style.display === 'none') {
-				/*전체 none*/
-				for(var i=0; i<=6; i++){
-					$childContent[i].style.display = 'none';
-				}
-				$childContent[3].style.display = 'block';
-			} else if ($childContent[3].style.display === 'block') {
-				$childContent[3].style.display = 'none';
-			}
-		})
-
-		/*EL*/
-		$childMenu[4].addEventListener('click', function () {
-			if ($childContent[4].style.display === 'none') {
-				/*전체 none*/
-				for(var i=0; i<=6; i++){
-					$childContent[i].style.display = 'none';
-				}
-				$childContent[4].style.display = 'block';
-			} else if ($childContent[4].style.display === 'block') {
-				$childContent[4].style.display = 'none';
-			}
-		})
-		/*Tag*/
-		$childMenu[5].addEventListener('click', function () {
-			if ($childContent[5].style.display === 'none') {
-				/*전체 none*/
-				for(var i=0; i<=6; i++){
-					$childContent[i].style.display = 'none';
-				}
-				$childContent[5].style.display = 'block';
-			} else if ($childContent[5].style.display === 'block') {
-				$childContent[5].style.display = 'none';
-			}
-		})
-
-		/*ETC*/
-		$childMenu[6].addEventListener('click', function () {
-			if ($childContent[6].style.display === 'none') {
-				/*전체 none*/
-				for(var i=0; i<=6; i++){
-					$childContent[i].style.display = 'none';
-				}
-				$childContent[6].style.display = 'block';
-			} else if ($childContent[6].style.display === 'block') {
-				$childContent[6].style.display = 'none';
-			}
-		})
-
+		/*하단 버튼 활성화*/
+		for(var i=0; i<=6; i++){
+			clickBtn(i);
+		}
 	</script>
 </body>
 </html>
