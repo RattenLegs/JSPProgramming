@@ -131,10 +131,12 @@ footer {
 		let $childContent = [$content.childNodes[1], $content.childNodes[3], $content.childNodes[5], $content.childNodes[7], $content.childNodes[9], $content.childNodes[11], $content.childNodes[13]]; //이걸 좀 보기 쉽게 바꿀 수 없나?
 		
 		/*왜 클래스에 먹이는건 안되는가?*/
-		for(var i=0; i<=6; i++){
-					$childContent[i].style.display = 'none';
-				}
-
+		function hide(){
+			for(var i=0; i<=6; i++){
+                $childContent[i].style.display = 'none';
+            }}
+		hide()
+		
 		/*기초*/
 		$childMenu[0].addEventListener('click', function () {
 			if ($childContent[0].style.display === 'none') {
