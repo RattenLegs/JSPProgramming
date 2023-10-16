@@ -6,29 +6,25 @@
 <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 <title>JSP 정리 문서</title>
 <link rel="stylesheet" href="CSS/base/base.css">
+<title>JSP 공부</title>
 <style>
-
-/* header {
+/*header*/
+header {
 	height: 100px;
-	background: black;
-	color: white;
+	width: 1500px;
 	text-align: center;
+	background-color: antiquewhite;
+	color: aqua;
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 100px;
+	/*line-height 공부하기*/
+	margin: 0 auto;
 }
-
-footer {
-	height: 100px;
-	background: black;
-	color: white;
-	text-align: center;
-}  */
-/*헤더 푸터 확인 완료*/
-/* nav{
-	height: 50%;
-} */
 
 /*container*/
 #container {
-	width: 1200px;
+	width: 1500px;
 	height: 900px;
 	margin: 0 auto;
 	border: 1px solid black;
@@ -40,6 +36,7 @@ footer {
 	background: black;
 	text-align: center;
 	margin: 0 auto;
+	/*그라데이션 넣어봅시다!*/
 }
 
 #menu {
@@ -47,31 +44,46 @@ footer {
 }
 
 #menu li {
-	display: inline-block; /*이해 잘 안되니 계속 해보기*/
-	width: 240px;
-	height: 100px;
-	line-height: 100px;
+	display: inline-block;
+	/*이해 잘 안되니 계속 해보기*/
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
 	text-align: center;
 }
 
 #menu li a {
 	color: white;
 	font-size: 20px;
-	font-weight: 900;
-	text-decoration: none; /*선으로 텍스트를 꾸미게 하는 속성*/
+	font-weight: bold;
+	text-decoration: none;
+	/*선으로 텍스트를 꾸미게 하는 속성*/
 }
 
 .main {
 	height: 650px;
 }
-/*section 끝*/
+
+/*footer*/
+footer {
+	height: 100px;
+	width: 1500px;
+	text-align: center;
+	background-color: antiquewhite;
+	color: aqua;
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 100px;
+	/*line-height 공부하기*/
+	margin: 0 auto;
+}
 </style>
 </head>
-<body>
-	<header>JSP 공부</header>
-	<div id="container">
 
-		<!-- 메뉴 선택 박스 -->
+<body>
+	<div id="container">
+		<header>JSP 공부</header>
+		<!--클릭 시 메인페이지로 이동-->
 		<section class="box">
 			<div>
 				<ul id="menu">
@@ -82,6 +94,7 @@ footer {
 					<li id="EL"><a href="#">표현 언어</a></li>
 					<li id="tag"><a href="#">태그</a></li>
 					<li id="ETC"><a href="#">기타</a></li>
+					<!-- li를 누르면 서로 다른 글이 나오게 한다. -->
 				</ul>
 			</div>
 		</section>
@@ -114,26 +127,26 @@ footer {
 				</div>
 			</div>
 		</nav>
-		<div class="moveBtn">
-			<button>이동</button>
-		</div>
+		<footer>푸터</footer>
+		<!--장식용, 완성해둘 것-->
 	</div>
-	<!-- container 끝 -->
-	<footer>푸터</footer>
 
 	<!--스크립트-->
 	<script>
 		/*상단 변수 정리*/
 		let $menu = document.getElementById('menu');
-		let $childMenu = [$menu.childNodes[1], $menu.childNodes[3], $menu.childNodes[5], $menu.childNodes[7], $menu
-			.childNodes[9], $menu.childNodes[11], $menu.childNodes[13]
-		];
+		let $childMenu = [ $menu.childNodes[1], $menu.childNodes[3],
+				$menu.childNodes[5], $menu.childNodes[7], $menu.childNodes[9],
+				$menu.childNodes[11], $menu.childNodes[13] ];
 
 		/*하단 변수 정리*/
 		let $content = document.getElementById('content');
-		let $childContent = [$content.childNodes[1], $content.childNodes[3], $content.childNodes[5], $content.childNodes[7],
-			$content.childNodes[9], $content.childNodes[11], $content.childNodes[13]
-		]; //이걸 좀 보기 쉽게 바꿀 수 없나?
+		let $childContent = [ $content.childNodes[1], $content.childNodes[3],
+				$content.childNodes[5], $content.childNodes[7],
+				$content.childNodes[9], $content.childNodes[11],
+				$content.childNodes[13] ]; //이걸 좀 보기 쉽게 바꿀 수 없나?
+
+		/*Q. 왜 클래스에 먹이는건 안되는가?*/
 
 		/*하단 화면 감추기 함수*/
 		function hide() {
@@ -144,10 +157,10 @@ footer {
 
 		/*하단 화면 감추기*/
 		hide()
-		
+
 		/*하단 버튼 활성화 함수*/
 		function clickBtn(number) {
-			$childMenu[number].addEventListener('click', function () {
+			$childMenu[number].addEventListener('click', function() {
 				if ($childContent[number].style.display === 'none') {
 					/*전체 none*/
 					for (var i = 0; i <= 6; i++) {
@@ -158,14 +171,15 @@ footer {
 					$childContent[number].style.display = 'none';
 				}
 			})
-		}	
+		}
 
 		/*하단 버튼 활성화*/
-		for(var i=0; i<=6; i++){
+		for (var i = 0; i <= 6; i++) {
 			clickBtn(i);
 		}
 	</script>
 </body>
+
 </html>
 
 <!-- 
