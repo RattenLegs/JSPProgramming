@@ -1,4 +1,43 @@
+/*배경*/
 body {
 	background-image: url('/CSS/background/mainBackground.jpg');
 	background-repeat: repeat;/*배경 이미지의 반복 방법 지정*/
+}
+
+/*container*/
+#container {
+	width: 1500px;
+	height: 900px;
+	margin: 0 auto;
+	border: 1px solid black;
+	background: white;
+}
+
+
+/*header*/
+header {
+	height: 100px;
+	width: 1500px;
+	text-align: center;
+	background-color: antiquewhite;
+	color: aqua;
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 100px;
+	/*line-height 공부하기*/
+	margin: 0 auto;
+}
+
+/*footer*/
+footer {
+	height: 100px;
+	width: 1500px;
+	text-align: center;
+	background-color: antiquewhite;
+	color: aqua;
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 100px;
+	/*line-height 공부하기*/
+	margin: 0 auto;
 }
