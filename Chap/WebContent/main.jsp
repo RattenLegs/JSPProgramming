@@ -6,77 +6,8 @@
 <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 <title>JSP 정리 문서</title>
 <link rel="stylesheet" href="CSS/base/base.css">
-<title>JSP 공부</title>
 <style>
-/*header*/
-header {
-	height: 100px;
-	width: 1500px;
-	text-align: center;
-	background-color: antiquewhite;
-	color: aqua;
-	font-size: 60px;
-	font-weight: bold;
-	line-height: 100px;
-	/*line-height 공부하기*/
-	margin: 0 auto;
-}
-
-/*container*/
-#container {
-	width: 1500px;
-	height: 900px;
-	margin: 0 auto;
-	border: 1px solid black;
-	background: white;
-}
-
-/*section*/
-.box {
-	background: black;
-	text-align: center;
-	margin: 0 auto;
-	/*그라데이션 넣어봅시다!*/
-}
-
-#menu {
-	margin: 0 auto;
-}
-
-#menu li {
-	display: inline-block;
-	/*이해 잘 안되니 계속 해보기*/
-	width: 200px;
-	height: 50px;
-	line-height: 50px;
-	text-align: center;
-}
-
-#menu li a {
-	color: white;
-	font-size: 20px;
-	font-weight: bold;
-	text-decoration: none;
-	/*선으로 텍스트를 꾸미게 하는 속성*/
-}
-
-.main {
-	height: 650px;
-}
-
-/*footer*/
-footer {
-	height: 100px;
-	width: 1500px;
-	text-align: center;
-	background-color: antiquewhite;
-	color: aqua;
-	font-size: 60px;
-	font-weight: bold;
-	line-height: 100px;
-	/*line-height 공부하기*/
-	margin: 0 auto;
-}
+/*개별 CSS만 정리*/
 </style>
 </head>
 
