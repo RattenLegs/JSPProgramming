@@ -36,7 +36,9 @@
 			</div>
 			<div id="content">
 				<div id="basicContent">
-					<p>기초 관련</p>
+					<p>기초 관련 정보의 큰 틀을 간략하게 보여주는 페이지입니다.</p>
+					<p>기초 내용 블라블라블라</p>
+					<p>이동을 누르면 기초 관련 첫 페이지로 이동합니다.</p>
 				</div>
 				<div id="directiveContent">
 					<p>디렉티브 관련</p>
@@ -57,6 +59,7 @@
 					<p>etc관련</p>
 				</div>
 			</div>
+			<button class="moveBtn">이동</button>
 		</nav>
 		<footer>푸터</footer>
 		<!--장식용, 완성해둘 것-->
@@ -70,13 +73,15 @@
 				$menu.childNodes[5], $menu.childNodes[7], $menu.childNodes[9],
 				$menu.childNodes[11], $menu.childNodes[13] ];
 
-		/*하단 변수 정리*/
+		/*하단 content 변수 정리*/
 		let $content = document.getElementById('content');
 		let $childContent = [ $content.childNodes[1], $content.childNodes[3],
 				$content.childNodes[5], $content.childNodes[7],
 				$content.childNodes[9], $content.childNodes[11],
 				$content.childNodes[13] ]; //이걸 좀 보기 쉽게 바꿀 수 없나?
 
+		/*하단 버튼 변수 정리*/
+		let $moveBtn = document.querySelector('.moveBtn');
 		/*Q. 왜 클래스에 먹이는건 안되는가?*/
 
 		/*하단 화면 감추기 함수*/
@@ -89,7 +94,8 @@
 		/*하단 화면 감추기*/
 		hide()
 
-		/*하단 버튼 활성화 함수*/
+		/*하단 content 활성화 함수*/
+		//보기에만 예쁠 뿐 잘못 만든 함수
 		function clickBtn(number) {
 			$childMenu[number].addEventListener('click', function() {
 				if ($childContent[number].style.display === 'none') {
@@ -102,6 +108,12 @@
 					$childContent[number].style.display = 'none';
 				}
 			})
+			//하단 버튼 관련 함수(미완)
+			$moveBtn.addEventListener('click', function() {
+				//00~06이 한번에 올 수 있게
+				location.href = 'JSP/start/00main.jsp';
+				/* location.href = 'JSP/start/0' + ${number} + 'main.jsp'; */
+			})
 		}
 
 		/*하단 버튼 활성화*/
@@ -112,11 +124,3 @@
 </body>
 
 </html>
-
-<!-- 
-<a href="/list/01basic/basicWebInfo.jsp">
-<a href="/list/02directive/JSPDirective/pageDirective/directivePageMain.jsp">
-href="/list/03script/script/scriptMain.jsp"
-href="/chap05/chap05main.jsp"
-href="/list/03script/script/scriptMain.jsp"
- -->
