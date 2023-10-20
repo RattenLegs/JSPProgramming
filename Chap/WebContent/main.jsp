@@ -113,6 +113,7 @@
 				//00~06이 한번에 올 수 있게
 				location.href = 'JSP/start/00main.jsp';
 				/* location.href = 'JSP/start/0' + ${number} + 'main.jsp'; */
+				/*이거 진짜 어렵네;*/
 			})
 		}
 
