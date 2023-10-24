@@ -114,6 +114,7 @@
 				location.href = 'JSP/start/00main.jsp';
 				/* location.href = 'JSP/start/0' + ${number} + 'main.jsp'; */
 				/*이거 진짜 어렵네;*/
+				/*살려줘...*/
 			})
 		}
 
