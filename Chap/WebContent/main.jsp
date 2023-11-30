@@ -59,7 +59,7 @@
 					<p>etc관련</p>
 				</div>
 			</div>
-			<button class="moveBtn">이동</button>
+			<button id="moveBtn">이동</button>
 		</nav>
 		<footer>푸터</footer>
 		<!--장식용, 완성해둘 것-->
@@ -81,8 +81,7 @@
 				$content.childNodes[13] ]; //이걸 좀 보기 쉽게 바꿀 수 없나?
 
 		/*하단 버튼 변수 정리*/
-		let $moveBtn = document.querySelector('.moveBtn');
-		/*Q. 왜 클래스에 먹이는건 안되는가?*/
+		let $moveBtn = document.getElementById('moveBtn');
 
 		/*하단 화면 감추기 함수*/
 		function hide() {
